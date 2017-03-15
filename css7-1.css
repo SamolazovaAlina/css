@@ -1,0 +1,42 @@
+/* относится ко всей странице и всем внутренним элементам */
+* {
+    margin: 0;
+    padding: 0;
+}
+/*Содержит все свойства стиля всех элементов тега body*/
+body { 
+    background-image: url(tranes.jpg);  
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment:fixed;
+    font-family: 'Roboto', sans-serif;
+}
+/* Содержит настраиваемые свойства стиля для всех элементов класса .page*/
+.page {
+    border: 1px solid #b5b7ba;
+    background-color: #dfdfdf;
+    min-width: 1280px;
+    height: 50px;
+    padding-top: 18px;
+    padding-left: 20px;
+   
+}
+/* Содержит настраиваемые свойства стиля для всех элементов класса .trane*/
+.trane {
+    border-bottom: 1px solid black;
+    margin: 20px;
+}
+ /* Содержит настраиваемые свойства стиля для всех элементов  id="footer"*/
+#footer {
+    height:60px; 
+    width:100%; 
+    position:absolute; 
+    bottom:0;
+    margin-top: 20px;
+    background-color: #434445;
+    text-align: center;
+    color: #a4a4a4;
+    font-size: 20px;
+    font-weight: 50;
+    line-height: 40px;    
+}
