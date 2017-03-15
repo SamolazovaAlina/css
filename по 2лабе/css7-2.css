@@ -1,0 +1,33 @@
+.text {
+    font-family: Courier New;
+    font-style: oblique;
+    font-size: 18pt;
+    color: blue;
+    
+}
+#top font{
+ font-size: 25px;
+}
+
+#imgs img{
+    border: 2px solid red;
+    float: left;
+    background-size: 75% auto;
+}
+ #wer {
+     color: red;
+ }
+ .dora {
+    font-family: Arial;
+    font-size: 18pt;
+    text-align: center;
+ }
+#col {
+  font-size: 14pt;  
+}
+#sab {
+    text-align: right;
+}
+#tyr {
+    color: green;
+}

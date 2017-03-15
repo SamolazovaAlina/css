@@ -1,0 +1,24 @@
+.text {
+    font-family: 'Arial';
+    font-style: bold;
+    font-style: oblique;
+    color: blue;
+    size: 12pt;
+    line-height: 16px;
+}
+
+.sab {
+  color: blue;  
+}
+
+.typ {
+    list-style-type: circle;
+}
+
+.ref {
+    list-style-type: square;
+}
+
+.wer {
+    list-style-type: upper-latin;
+}
