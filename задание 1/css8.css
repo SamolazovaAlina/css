@@ -1,0 +1,116 @@
+body {
+    margin:9px 9px 0 9px;
+    padding:0;
+    background:#FFF;
+}
+#level0 {
+     background:#FC0;
+     width:100%; 
+}
+#level1 {
+    margin-left:143px;
+    padding-left:9px;
+    background:#FFF;
+}
+#level2 {
+    background:#FFF3AC;
+    position:relative;
+    width:inherit; 
+
+}
+
+#main {
+    margin-right:9em; 
+    padding-right:9px;
+    background:#FFF;
+    border-right: solid yellow;
+}
+#main h1 {
+    margin:0;
+    padding-left:.3em;
+    font:1.25em Verdana,Helvetica,Arial;
+    color:#609;
+    background:#FC0;
+}
+#main dt {
+    font-weight:bold;
+    font-size:120%;
+    margin-top:.8em
+}
+#rgtBar h3 {
+    margin:0;
+    padding:3px;
+    background:#FC0;
+    font-weight:bold;
+    font-size:1em;
+    text-align:center;
+}
+
+
+#topBar {
+    background:#FC0;
+}
+#advBar {
+    background:#FFF3AC;
+    clear:right; 
+    
+    padding-left: 10px;
+}
+#tipDay {
+    position: relative;
+    float:right;
+    width:175px;
+    background:#FFF3AC;
+    
+}
+#lftBar {
+    position:absolute;
+    width:143px;
+    top:9px;
+    left:9px;
+}
+
+#rgtBar {
+    width:9em; 
+    position:absolute;
+    top:0;
+    right:0;
+}
+   
+#topBar form { 
+    padding-top: 5px;
+    float:right;
+    width:15em;
+    text-align:right;
+    margin:0;
+    line-height:.7em;
+}
+#topBar input {
+    font-size:.8em;
+}
+#topBar b {
+    display:block;
+    text-align:left;
+    font:bold .8em/1.7em Arial,Geneva,sans-serif;
+    font-size: large;
+}
+#tipTit {
+    float:right;
+    width:7em;
+    text-align:right;
+    position:relative;
+    font:.8em/1.8em Arial,Geneva,sans-serif;
+    text-align: center;
+}
+.note {
+    color:red
+}
+#advBar p{
+    text-align:right;
+    margin:0 0.5em;
+    font-weight:bold;
+    }
+#advBar img{
+    margin-bottom:1em
+    }
+
