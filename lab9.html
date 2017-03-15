@@ -1,12 +1,21 @@
 ﻿<DOCTYPE HTML>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Заказ билетов на поезда</title>
-    <link rel="stylesheet" href="css7-1.css">
+<meta charset="UTF-8">
+<title>Заказ билетов на поезда</title>
+<link rel="stylesheet" href="css9.3.css">
+<script>
+function getValue(form) {
+document.getElementById("adviser").value = form.value;
+document.getElementById("adviser").setAttribute("color", "blue");}
+function changeColor(form) {
+form.style.backgroundColor = "blue";}
+function getMessage(form) {
+alert("Ваше мнение очень важно для нас. Спасибо!"+ form.value);}
+</script>
 </head>
 <body>
-    <div class="page">
+<div class="page">
 <form action="Поезда" method="авсс">
 <p><b>Номер поезда:</b><input type="text" name="date begin" value="№171613"></p><br><br>
 <div class="trane">
@@ -17,22 +26,23 @@
 <div class="trane">
 <td><b>Направление поезда:</b></td>
 <td>
-<select name="do_type">
-<option value="1">Могилев-Минск
-<option value="2">Минск-Гомель
-<option value="3">Брест-Витебск
+<select value="введите направление"  onmouseover="getValue(this)">
+<option value="введите направление поезда" selected="selected" onmouseover="getValue(this)"><i>Выберите направление</i></option>
+<option value="Могилев-Минск" onmouseover="getValue(this)">Могилев-Минск</option>
+<option value="Минск-Гомель" onmouseover="getValue(this)">Минск-Гомель</option>
+<option value="Брест-Витебск" onmouseover="getValue(this)">Брест-Витебск</option>
 </select>
 </td>
 </br>
 <br>
 </div>
 <div class="trane">
-<p><b>Название поезда:</b><input type="text" name="date begin" value="Красная звезда"></p>
+<p><b>Название поезда:</b><input type="text" name="date begin" value="Красная звезда" onmouseover="changeColor(this)"></p>
 <br></div>
 <div class="trane">
 <td><b>Количество билетов:</b></td>
 <td>
-<select name="do_type">
+<select name="do_type" onmouseover="changeColor(this)">
 <option value="quantity">1
 <option value="quantity">2
 <option value="quantity">3
@@ -44,7 +54,7 @@
 <div class="trane">
 <td><b>Класс желаемых вагонов:</b></td>
 <td>
-<select name="do_type">
+<select name="do_type" onmouseover="changeColor(this)">
 <option value="quantity">Люкс
 <option value="quantity">Спальный
 <option value="quantity">Купе
@@ -53,9 +63,18 @@
 </select>
 </td>
 </br>
-<br>
 </div>
-<input type="button" value="Отправить">
+<br>
+<div class="trane">
+<tr>
+<td><b>Обратная связь:<b></td>
+<td>
+<textarea cols="24" rows="5" id="adviser"placeholder="Введите ваше сообщение" onmouseover="changeColor(this)"></textarea>
+</td>
+</tr>
+</div>
+<input type="button" value="Отправить" onclick="getMessage(this)">
+</table>
 </form>
 </div>
 <div id="footer">
